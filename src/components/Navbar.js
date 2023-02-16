@@ -4,30 +4,60 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import logo from "../assets/logo.png";
+
+
+
+
+
+
 
 export default function ButtonAppBar() {
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+    <Box >
+      <AppBar position="sticky"
+      sx={{
+      bgcolor: 'background.paper',
+    
+    }}
+      >
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Box
+            component="img"
+            sx={{
+            height: 50, ml: 10,
+            }}
+            alt="Your logo."
+            src={logo}
+        />
+        <Box  sx={{
+            mr: 10,
+            }}>
+  <Typography variant="h6" component="div" sx={{color: 'black',  }} >
+
+  <Button sx={{color: 'black', marginLeft: "auto", }} color="primary">List your Vehicle</Button>
+
+
+          
+          <Button sx={{color: 'black'  }} color="primary">Login</Button>
           </Typography>
-          <Button color="inherit">List your Vehicle</Button>
-          <Button color="inherit">Login</Button>
+
+        </Box>
+        
+        
+         
         </Toolbar>
       </AppBar>
+      
     </Box>
+    
   );
 }
+
+
+
+
+
+
+
