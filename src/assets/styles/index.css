@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.message {
+  -webkit-appearance: none;
+}
+
+.active {
+  color: #000000;
+}
+
+.active:hover {
+  color: #59ce8f;
+}
+
+/* Trial */
+
+/* .App {
+  display: flex;
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+/* .day {
+  background-color: aliceblue;
+  align-items: center;
+  cursor: default;
+  display: flex;
+  font-size: 24px;
+  height: 50%;
+  justify-content: center;
+  width: 50%;
+  border: solid;
+} */
+
+.activeProcess {
+  background-color: #59ce8f;
+  /* color: white; */
+}
+
+.primaryColor {
+  color: #59ce8f;
+}
