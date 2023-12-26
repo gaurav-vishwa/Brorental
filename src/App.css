@@ -114,13 +114,13 @@ textarea:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4cbb17;
+  background: #59ce8f;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4cbb17;
+  background: #59ce8f;
 }
 
 .tc_container1 {
